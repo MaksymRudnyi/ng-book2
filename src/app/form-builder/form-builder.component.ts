@@ -20,7 +20,7 @@ export class FormBuilderComponent implements OnInit {
     }
 
     onSubmit(value: string): void {
-        console.log('Submited: ', value);
+        console.log('you submitted value: ', value);
     }
 
     ngOnInit() {

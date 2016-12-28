@@ -1,15 +1,17 @@
-<div class="form-wrap">
-    <h2>Demo Form: Sku with Form Builder</h2>
+<div class="ui raised segment">
+    <h2 class="ui header">Demo Form: Sku with Builder</h2>
     <form [formGroup]="myForm"
           (ngSubmit)="onSubmit(myForm.value)"
-          class="form">
+          class="ui form">
+
         <div class="field">
-            <label for="skuBuilder">SKU builder:</label>
+            <label for="skuInput">SKU</label>
             <input type="text"
-                   id="skuBuilder"
-                   placeholder="sku"
+                   id="skuInput"
+                   placeholder="SKU"
                    [formControl]="myForm.controls['sku']">
         </div>
-        <button type="submit">Submit</button>
+
+        <button type="submit" class="ui button">Submit</button>
     </form>
 </div>

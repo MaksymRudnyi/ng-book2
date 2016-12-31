@@ -1,6 +1,6 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
-import {FormsModule, ReactiveFormsModule, FormBuilder, FormGroup} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule, } from '@angular/forms';
 import {HttpModule} from '@angular/http';
 
 import {AppComponent} from './app.component';
@@ -10,7 +10,6 @@ import {ProductImageComponent} from './products-list/product-row/product-image/p
 import {ProductDepartamentComponent} from './products-list/product-row/product-departament/product-departament.component';
 import {PriceDisplayComponent} from './products-list/product-row/price-display/price-display.component';
 import {FormSkuComponent} from './form-sku/form-sku.component';
-import {FormBuilderComponent} from './form-builder/form-builder.component';
 import { SimpleHttpComponent } from './simple-http/simple-http.component';
 
 @NgModule({
@@ -22,9 +21,6 @@ import { SimpleHttpComponent } from './simple-http/simple-http.component';
         ProductDepartamentComponent,
         PriceDisplayComponent,
         FormSkuComponent,
-        FormBuilderComponent,
-        FormBuilder,
-        FormGroup,
         SimpleHttpComponent
     ],
     imports: [

@@ -11,6 +11,7 @@ import {ProductDepartamentComponent} from './products-list/product-row/product-d
 import {PriceDisplayComponent} from './products-list/product-row/price-display/price-display.component';
 import {FormSkuComponent} from './form-sku/form-sku.component';
 import {FormBuilderComponent} from './form-builder/form-builder.component';
+import { SimpleHttpComponent } from './simple-http/simple-http.component';
 
 @NgModule({
     declarations: [
@@ -23,7 +24,8 @@ import {FormBuilderComponent} from './form-builder/form-builder.component';
         FormSkuComponent,
         FormBuilderComponent,
         FormBuilder,
-        FormGroup
+        FormGroup,
+        SimpleHttpComponent
     ],
     imports: [
         BrowserModule,

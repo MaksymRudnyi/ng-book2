@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { ProductImageComponent } from './product-image.component';
+import { YouTubeSearchComponentComponent } from './you-tube-search-component.component';
 
-describe('ProductImageComponent', () => {
-  let component: ProductImageComponent;
-  let fixture: ComponentFixture<ProductImageComponent>;
+describe('YouTubeSearchComponentComponent', () => {
+  let component: YouTubeSearchComponentComponent;
+  let fixture: ComponentFixture<YouTubeSearchComponentComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ProductImageComponent ]
+      declarations: [ YouTubeSearchComponentComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ProductImageComponent);
+    fixture = TestBed.createComponent(YouTubeSearchComponentComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

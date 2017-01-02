@@ -125,6 +125,7 @@ export class SearchResultComponent {
 <div class="container">
 <div class="page-header">
 <h1>YouTube search</h1>
+<span *ngIf="loading">loading...</span>
 </div>
 
 <div class="row">

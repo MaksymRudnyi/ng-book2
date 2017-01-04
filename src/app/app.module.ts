@@ -8,15 +8,20 @@ import {
     RouterModule,
     Routes
 } from '@angular/router';
+import { SearchComponent } from './search/search.component';
 
 const routes: Routes = [
-    {path: '', redirectTo: 'home', pathMatch: 'full'},
-    {path: 'contactUs', redirectTo: 'contact'},
+    {path: '', redirectTo: 'search', pathMatch: 'full'},
+    {path: 'search', component: 'app-search'},
+    {path: 'artists/:id', component: 'app-search'},
+    {path: 'albums/:id', component: 'app-search'},
+    {path: 'tracks/:id', component: 'app-search'},
 ];
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        SearchComponent
     ],
     imports: [
         BrowserModule,

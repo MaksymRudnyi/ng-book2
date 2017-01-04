@@ -8,15 +8,17 @@ import {
     RouterModule,
     Routes
 } from '@angular/router';
+
 import { SearchComponent } from './search/search.component';
 
 const routes: Routes = [
-    {path: '', redirectTo: 'search', pathMatch: 'full'},
-    {path: 'search', component: 'app-search'},
-    {path: 'artists/:id', component: 'app-search'},
-    {path: 'albums/:id', component: 'app-search'},
-    {path: 'tracks/:id', component: 'app-search'},
+    {path: 'search', component: 'SearchComponent'},
+    {path: 'artists/:id', component: 'SearchComponent'},
+    {path: 'albums/:id', component: 'SearchComponent'},
+    {path: 'tracks/:id', component: 'SearchComponent'}
 ];
+
+
 
 @NgModule({
     declarations: [

@@ -12,10 +12,10 @@ import {
 import { SearchComponent } from './search/search.component';
 
 const routes: Routes = [
-    {path: 'search', component: 'SearchComponent'},
-    {path: 'artists/:id', component: 'SearchComponent'},
-    {path: 'albums/:id', component: 'SearchComponent'},
-    {path: 'tracks/:id', component: 'SearchComponent'}
+    {path: 'search', component: SearchComponent},
+    {path: 'artists/:id', component: SearchComponent},
+    {path: 'albums/:id', component: SearchComponent},
+    {path: 'tracks/:id', component: SearchComponent}
 ];
 
 
